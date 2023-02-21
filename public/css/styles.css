@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inspiration&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+}
+body section
+{
+    min-height: 50vh;
+    width: 100%;
+    padding: 100px;
+}
+body .myNav{
+    position: fixed;
+    width: 100%;
+}
+
+/* home page */
+body section.home
+{
+    background: url(/img/home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body section.home .home-content
+{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+body section.home .home-content .right img
+{
+    height: 200px;
+    width: 200px;
+    border: solid 3px aqua;
+    border-radius: 50%;
+}
+body section.home .home-content .right img:hover
+{
+    transform: scale(1.12);
+}
+body section.home .home-content h1
+{
+    font-weight: bold;
+    color: black;
+    font-size: 40px;
+}
+body section.home .home-content h1 span
+{
+    color: white;
+    font-family: 'Inspiration';
+    font-size: 56px;
+}
+body section.home .home-content h2
+{
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+body section.home .home-content h2 span
+{
+    color: aqua;
+}
+
+/* about page */
+body section.about
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body section.about .about-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+body section.about .about-content h1
+{
+    font-weight: 500;
+
+}
+
+body section.about .about-content p
+{
+    padding: 0 40px 40px 40px;
+    text-align: justify;
+    font-size: 20px;
+}
+/* skills */
+body section.skills
+{
+    background-color: rgba(0, 128, 128, 0.366);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+body section.skills .skills-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.skills .skills-content img
+{
+    height: 60px;
+    width: 60px;
+}
+body .skills .skills-content img:hover
+{
+    transform: scale(1.05);
+}
+body .skills .skills-content .rating
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+body .skills .skills-content .rating span
+{
+    font-size: 30px;
+    text-indent: 3px;
+    color: grey;
+}
+body .skills .skills-content .rating span:hover
+{
+    transform: scale(1.2);
+}
+body .skills .skills-content .rating .checked
+{
+    color: black;
+}
+/* contact */
+body section.contact
+{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+body section.contact .contact-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px teal;
+    width: 60%;
+    height: 400px;
+    flex-wrap: wrap;
+    padding: 30px;
+    
+}
+body section.contact .contact-content form
+{
+    /* padding: 100px; */
+    height: 350px;
+    width: 100%;
+}
+body section.contact .contact-content form input,
+body section.contact .contact-content form textarea
+{
+    padding: 10px;
+    width: 100%;
+    border: solid 1px teal;
+    margin: 3px;
+}
+body section.contact .contact-content form textarea
+{
+    resize: none;
+    overflow-y: scroll;
+}
+body section.contact .contact-content form input:focus,
+body section.contact .contact-content form textarea:focus
+{
+    border-color: teal;
+}
+body section.contact .contact-content button
+{
+    height: 40px;
+    width: 130px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    border: solid 1px teal;
+    margin: 3px;
+}
+body section.contact .contact-content button:hover
+{
+    background-color: transparent;
+    color: teal;
+}
+body section.contact .social i{
+    color: teal;
+    margin: 6px;
+}
+
+/* footer */
